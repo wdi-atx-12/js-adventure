@@ -15,7 +15,7 @@
 ```javascript
 name = prompt("What is your name?");
 ```
-- You may want to use [repl.it](https://repl.it/languages/javascript_web) to write your code!
+- You may want to use [repl.it](https://repl.it/languages/javascript_web) to write your code! However, you'll want to copy/paste/submit your code in the `adventure.js` file.
 
 ### Game Ideas
 - A Lord of the Rings style adventure where the player is Frodo, and he must choose how to get to Mordor. Possible obstacles involve Orcs, goblins, and getting drunk on mead.
