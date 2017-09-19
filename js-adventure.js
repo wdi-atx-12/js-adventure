@@ -2,6 +2,7 @@ var prompt = require('./tools/prompt-sync')();
 var yn = require('./tools/yn');
 
 var weapon = ['plunger', 'towel', 'toothpaste']
+let distance = 0;
 
 let directionOne = prompt("My eyes are not as good as they once were (and it's 2017),\n are you male, female, or neither, adventurer? m/f/n");
 
@@ -49,5 +50,12 @@ else if (changeWeapon == 'n') {
 }
 else {
   console.log("The error of your ways is quite apparent. Natural selection has come for you... \nThe end is nigh!");
+  run = prompt("Will you attempt to outrun your fate? (y/n)")
+
+  while (run != 'n' && distance <= 90) {
+    distance = distance + 15;
+    run = prompt("You have run " + distance + " feet. Your own are beginning to \ndrag the ground, will you continue? (y/n)");
+  }
+  console.log("Collapsing in exhaustion, you realize that maybe you should have \nworked out at least once a week while attending the GA immersive.")
 }
 
