@@ -11,8 +11,8 @@ if(exitChoice.toLowerCase() === "stairs"){
     var pushOrElsewhere = prompt("Do you push forth trampling people under you to save yourself, " + playerName + ", or do you try to find another way down? (Enter One: Trample or Look) ");
 
       if(pushOrElsewhere.toLowerCase() === "trample"){
-        console.log("\n" + "Leaping over the wall of the crowdm you find footing on the shoulders and heads of those who you, " + playerName + "need to outpace. You can feel the bones beneath you pop out of place, but you continue, causing desperate calls of those cascading behind you.  Upon reaching the lower level, a CALL TO FREEZE is barked at you by a guard, standing at the foot of the stairs, aiming at you." + "\n");
-        var kickOrComply = prompt("Admist the chaos going around you, do you wish to comply to orders shouted by the guard or, " + playerName + ", do you wish to kick the gun out of his hands to defend yourself? (Enter One: Comply or Kick) ");
+        console.log("\n" + "Leaping over the wall of the crowd, you find footing on the shoulders and heads of those who you, " + playerName + "need to outpace. You can feel the bones beneath you pop out of place, but you continue, causing desperate calls of those cascading behind you.  Upon reaching the lower level, a CALL TO FREEZE is barked at you by a guard, standing at the foot of the stairs, aiming at you." + "\n");
+        var kickOrComply = prompt("Amidst the chaos going around you, do you wish to comply to orders shouted by the guard or, " + playerName + ", do you wish to kick the gun out of his hands to defend yourself? (Enter One: Comply or Kick) ");
 
           if(kickOrComply.toLowerCase() === "kick"){
             console.log("\n" + "You lunge forward as bodies crash behind you. The extra force forces your foot to the pistol and lands you next to it. You leave the mass of people to flatten the guard with a new firearm better equiped to continue. Congratulations, " + playerName + ", you have left the building.");
@@ -28,7 +28,7 @@ if(exitChoice.toLowerCase() === "stairs"){
           console.log("\n" + "Mob mentality corralled everyone but you toward the southern stairway. The northern stairway is clear for you to use. After a rapid dash headlong down, you the doors to the lobby and the parking garage." + "\n");
 
           var lobbyOrGarage = prompt("Do you choose to exit through the lobby," + playerName + ", where you may find the answer to the pandemonium, or through the parking garage, in order to avoid the volotile crowds? (Enter One: Lobby or Garage) ");
-            if(lobbyOrGarage.toLowerCase() === lobby){
+            if(lobbyOrGarage.toLowerCase() === "lobby"){
               console.log("\n" + "As expected, the lobby is filled with people possessed to your same goal of escape. Plumes of gore begin to explode upward in the packed lobby." + "\n");
 
               var hideRunGarage = prompt("Seeing the lobby overrun and foresaken, " + playerName + ", you can decide to hide, attempt to make it through the door, or return to exit through the garage. Choose. (Enter One: Hide, Run, Garage) ");
@@ -41,7 +41,7 @@ if(exitChoice.toLowerCase() === "stairs"){
                 }else if (hideRunGarage.toLowerCase() === "garage") {
                   console.log("\n" + "You find the door to the garage jammed, but a quick search reveals a crowbar you use to pry open the door. You fall through and land facing the arrow pointing toward the only available exit through the basement level." + "\n");
 
-                  var hideOrRun = ("As you hear screams sound and cease suddenly in rapid succession from below, choosing between hiding and heading toward the cries for mercy, and the exit, are your only choices. What do you do? (Enter One: Hide or Run) ");
+                  var hideOrRun = prompt("As you hear screams sound and cease suddenly in rapid succession from below, choosing between hiding and heading toward the cries for mercy, and the exit, are your only choices. What do you do? (Enter One: Hide or Run) ");
                     if(hideOrRun.toLowerCase() === "hide"){
 
                       console.log("\n" + "You find an alcove of cement to lean behind, you feel the warm breath of the nearby machinary running. You feel movement behind you, " + playerName + ". The next thing you feel is the crunch of your ribs, and the last thing you hear is your own helpless yell, starting and suddenly ceasing. You are Dead. " + "\n");
@@ -49,15 +49,15 @@ if(exitChoice.toLowerCase() === "stairs"){
                       console.log("\n" + "Sprinting along the wall, lights flickering off as you run past, you reach the lower exit and take a left. " + playerName + ", you run up the ascending, winding concrete and see daylight, and more chaos. Congratulations, you have made it out of the building. " + "\n");
 
                     }else{
-                      console.log("\nYou took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
+                      console.log("\nYou took too long to decide, " + playerName + ". You find an alcove of cement to lean behind, you feel the warm breath of the nearby machinary running. You feel movement behind you, " + playerName + ". The next thing you feel is the crunch of your ribs, and the last thing you hear is your own helpless yell, starting and suddenly ceasing. You are Dead. " + "\n");
                     }
                 }else{
-                  console.log("\nYou took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
+                  console.log("\nYou took too long to decide, " + playerName + ". You find an alcove of cement to lean behind, you feel the warm breath of the nearby machinary running. You feel movement behind you, " + playerName + ". The next thing you feel is the crunch of your ribs, and the last thing you hear is your own helpless yell, starting and suddenly ceasing. You are Dead. " + "\n");
                 }
             }else if(lobbyOrGarage === "garage"){
               console.log("\n" + "You find the door to the garage jammed, but a quick search reveals a crowbar you use to pry open the door. You fall through and land facing the arrow pointing toward the only available exit through the basement level." + "\n");
 
-              var hideOrRun = ("As the screams sound and cease suddenly in rapid succession from below, choosing between hiding and heading toward the cries for mercy, and the exit, are your only choices. What do you do? (Enter One: Hide or Run) ");
+              var hideOrRun = prompt("As the screams sound and cease suddenly in rapid succession from below, choosing between hiding and heading toward the cries for mercy, and the exit, are your only choices. What do you do? (Enter One: Hide or Run) ");
                 if(hideOrRun.toLowerCase() === "hide"){
                   console.log("\n" + "You find an alcove of cement to lean behind, you feel the warm breath of the nearby machinary running. You feel movement behind you, " + playerName + ". The next thing you feel is the crunch of your ribs, and the last thing you hear is your own helpless yelp, starting and suddenly ceasing. You are Dead. " + "\n");
 
@@ -65,7 +65,7 @@ if(exitChoice.toLowerCase() === "stairs"){
                   console.log("\n" + "Sprinting along the wall, lights flickering off as you run past, you reach the lower exit and take a left. " + playerName + ", you run up the ascending, winding concrete and see daylight, and more chaos. Congratulations, you have made it out of the building. " + "\n");
 
                 }else{
-                  console.log("\nYou took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
+                  console.log("\nYou took too long to decide, " + playerName + ". You find an alcove of cement to lean behind, you feel the warm breath of the nearby machinary running. You feel movement behind you, " + playerName + ". The next thing you feel is the crunch of your ribs, and the last thing you hear is your own helpless yell, starting and suddenly ceasing. You are Dead. " + "\n");
                 }
             }else{
               console.log("\nYou took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
@@ -92,7 +92,7 @@ if(exitChoice.toLowerCase() === "stairs"){
           console.log("\n" + "Sprinting along the wall, lights flickering off as you run past, you reach the lower exit and take a left. " + playerName + ", you run up the ascending, winding concrete and see daylight, and more chaos. Congratulations, you have made it out of the building. " + "\n");
 
         }else{
-          console.log("\nYou took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
+          console.log("\nYou took too long to decide, " + playerName + ". You are pushed into the elevator shaft.");
         }
 
     }
@@ -121,16 +121,3 @@ if(exitChoice.toLowerCase() === "stairs"){
 }else{
   console.log("You took too long to decide, " + playerName + ". A flash of light strikes as your body disintegrates. You no longer exist.");
 };
-
-//
-// // a few example inputs (delete these from your completed file)
-// var booleanInput = yn(prompt('Is this first variable true (y/n)? '));
-// var integerInput = parseInt(prompt('Enter a whole number: '),10);
-// var stringInput = prompt('Enter any string: ');
-//
-// console.log();
-//
-// // a few example outputs (delete these from your completed file)
-// console.log('Your boolean = ' + booleanInput + '.');
-// console.log('Your integer = ' + integerInput + '.');
-// console.log('Your string  = ' + stringInput + '.');
